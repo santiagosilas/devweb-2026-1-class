@@ -1,0 +1,13 @@
+{
+  "name": "2026-02-05",
+  "version": "1.0.0",
+  "description": "Setup do Projeto",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx serve src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
