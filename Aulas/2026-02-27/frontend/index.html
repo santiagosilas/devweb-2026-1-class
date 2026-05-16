@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>A</h1>
+    <h1 id="header">B</h1>
+    <h1 class="header">C</h1>
+    <button>Enviar</button>
+    <form action="" method="get">
+      <input type="text" name="busca" id="busca" />
+      <input type="submit" value="Buscar" />
+      <input type="reset" value="Limpar" />
+    </form>
+    <script>
+      //alert("Oi");
+      //let valor = prompt("valor:");
+      //let yes = confirm("tem certeza ?");
+      // DOM Document Object Model
+      //document.write(`
+      //  <h1>Oi</h1>
+      //`);
+      const btn = document.querySelector("button");
+      const h1Header = document.querySelector(".header");
+      h1Header.textContent = "ABC";
+      //h1Header.innerHTML = "<a href=#>teste</a>";
+      h1Header.style.color = "red";
+      btn.addEventListener("click", (e) => {
+        h1Header.style.color = "yellow";
+      });
+      document.querySelector("form").onsubmit = (e) => {
+        e.preventDefault();
+        console.log(e.target);
+      };
+    </script>
+  </body>
+</html>
